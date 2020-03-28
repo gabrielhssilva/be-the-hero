@@ -1,14 +1,13 @@
+const cors = require('cors');
 const express = require('express');
 const routes = require('./routes');
-const cors = require('cors');
 const app = express();
 
 // Informar que vai ser usado JSON para as requisições
 app.use(express.json());
-app.use(routes);
-
 // Permitir Cors
 app.use(cors());
+app.use(routes);
 
 // Abrir porta para escuta
 app.listen(3333);

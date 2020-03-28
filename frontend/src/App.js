@@ -1,11 +1,15 @@
 import React from 'react';
+import './global.scss'
 
-// JSX (Javascript XML)
+import Routes from './routes';
+
 
 function App() {
+
   return (
-    <h1>Be the Hero!</h1>
-    );
+    <Routes/>
+  );
 }
 
 export default App;
+ 
